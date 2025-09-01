@@ -186,3 +186,18 @@ label input[type=checkbox]{
   margin-top: 2px;
   place-content: center;
 }
+
+
+
+/* back to nova's code */
+
+input[type=radio] {
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  border: 2px solid #fdfaf5;
+  outline: 2px solid black;
+}
+input[type=radio]:checked{
+    background: black;
+}
