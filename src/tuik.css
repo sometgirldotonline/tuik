@@ -1,0 +1,133 @@
+/* tuik v0.0 by github.com/sometgirldotonline */
+:root {
+  background-color: #fdfaf5;
+  font-family: system-ui;
+}
+nav:first-child {
+  border-bottom: 3px #474747 solid;
+  width: 100vw;
+  background-color: #fdfaf5;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  padding: 5px;
+}
+nav ul a[active] {
+  font-weight: bold;
+}
+nav ul a:not([active]):hover {
+  font-weight: bold;
+}
+nav ul:has(:hover) a[active] {
+  font-weight: normal;
+}
+nav * {
+  display: inline-block;
+  margin: 0px;
+}
+nav ul {
+  float: right;
+  list-style-type: none;
+  margin-right: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body {
+  margin-top: 50px;
+}
+blockquote {
+  margin: 0px;
+  padding: 10px;
+  border-left: #000 3px solid;
+}
+code {
+  background-color: #0000001e;
+  padding: 10px;
+}
+
+p code {
+  padding: 4px;
+}
+dl {
+  padding: 10px;
+  background-color: #0000001e;
+  width: fit-content;
+  min-width: 45%;
+}
+dl dt {
+  font-size: 1.4em;
+  font-weight: bold;
+  font-style: italic;
+}
+dl dd {
+  margin-left: 10px;
+}
+
+input:not([type="file"], [type="range"]),
+button {
+  outline: none;
+  background-color: #fdfaf5;
+  border: 2px solid black;
+}
+button {
+  padding: 3px;
+  border-radius: 2px;
+}
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 25rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #000000;
+  border-radius: 0rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4px; /* Centers thumb on the track */
+  background-color: #000000;
+  border-radius: 0rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #000000;
+  border-radius: 0rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #000000;
+  border: 2px solid #fdfaf5; /*Removes extra border that FF applies*/
+  border-radius: 0rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  outline-offset: 0.125rem;
+}
