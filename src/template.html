@@ -1,0 +1,187 @@
+<!-- tuik HTML template. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TUIK Preview</title>
+    <link rel="stylesheet" href="https://ghraw.novafurry.workers.dev/gist/novafurry/96284d07080767edd56d2ca719f4cfe5/raw/77704dc0c33b33931aa2b2750cfd5ce551f064dd/tuik.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>TUIK Preview</h1>
+      <ul>
+        <li><a href="#" active>Nav Link 1</a></li>
+        <li><a href="#">Nav Link 2</a></li>
+        <li><a href="#">Nav Link 3</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h2>Typography</h2>
+        <p>
+          This is a paragraph with <strong>strong</strong>, <em>emphasis</em>,
+          <a href="#">a link</a>, and <code>inline code</code>.
+        </p>
+        <blockquote>This is a blockquote.</blockquote>
+        <pre><code>preformatted code block</code></pre>
+        <ul>
+          <li>Unordered list item</li>
+          <li>Another item</li>
+        </ul>
+        <ol>
+          <li>Ordered list item</li>
+          <li>Another item</li>
+        </ol>
+        <dl>
+          <dt>Definition term</dt>
+          <dd>Definition description</dd>
+        </dl>
+      </article>
+
+      <article>
+        <h2>Forms</h2>
+        <form>
+          <p>
+            <label>Text <input type="text" placeholder="Text" /></label>
+          </p>
+          <p>
+            <label
+              >Password <input type="password" placeholder="Password"
+            /></label>
+          </p>
+          <p>
+            <label>Email <input type="email" placeholder="Email" /></label>
+          </p>
+          <p>
+            <label>Number <input type="number" value="5" /></label>
+          </p>
+          <p>
+            <label>Range <input type="range" /></label>
+          </p>
+          <p>
+            <label>File <input type="file" /></label>
+          </p>
+          <p>
+            <label><input type="checkbox" /> Checkbox</label>
+          </p>
+          <p>
+            <label><input type="radio" name="r" /> Radio 1</label>
+            <label><input type="radio" name="r" /> Radio 2</label>
+          </p>
+          <p>
+            <label>Textarea <textarea></textarea></label>
+          </p>
+          <p>
+            <label
+              >Select
+              <select>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <button type="button">Button</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </p>
+        </form>
+      </article>
+
+      <article>
+        <h2>Tables</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cell A1</td>
+              <td>Cell A2</td>
+            </tr>
+            <tr>
+              <td>Cell B1</td>
+              <td>Cell B2</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h2>Components</h2>
+        <section>
+          <h3>Card Example</h3>
+          <p>
+            Cards can be represented with <code>&lt;section&gt;</code> or
+            <code>&lt;article&gt;</code>.
+          </p>
+        </section>
+
+        <div role="alert">This is an alert message.</div>
+        <progress value="50" max="100"></progress>
+        <meter value="0.7">70%</meter>
+
+        <details>
+          <summary>Accordion (details/summary)</summary>
+          <p>Hidden content</p>
+        </details>
+
+        <dialog open>
+          <p>This is a modal dialog.</p>
+          <button>Close</button>
+        </dialog>
+
+        <nav aria-label="Breadcrumb">
+          <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Section</a></li>
+            <li>Current</li>
+          </ol>
+        </nav>
+
+        <nav aria-label="Pagination">
+          <ul>
+            <li><a href="#">&laquo; Prev</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">Next &raquo;</a></li>
+          </ul>
+        </nav>
+      </article>
+
+      <article>
+        <h2>Tabs</h2>
+        <section>
+          <details tab open>
+            <summary>Tab One</summary>
+            <p>Content for Tab One.</p>
+          </details>
+          <details tab>
+            <summary>Tab Two</summary>
+            <p>Content for Tab Two.</p>
+          </details>
+          <details tab>
+            <summary>Tab Three</summary>
+            <p>Content for Tab Three.</p>
+          </details>
+        </section>
+      </article>
+    </main>
+
+    <aside>
+      <h2>Sidebar</h2>
+      <ul>
+        <li><a href="#">Sidebar link 1</a></li>
+        <li><a href="#">Sidebar link 2</a></li>
+      </ul>
+    </aside>
+
+    <footer>
+      <p>Footer content © 2025</p>
+    </footer>
+  </body>
+</html>
