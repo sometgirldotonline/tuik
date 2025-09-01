@@ -201,3 +201,76 @@ input[type=radio] {
 input[type=radio]:checked{
     background: black;
 }
+
+aside {
+  position:fixed !important;
+  right: 0px;
+  top:51px;
+  width: 15vw;
+  padding:10px;
+  background: #fdfaf5 !important;
+  text-align: right;
+}
+aside li{
+  list-style: none;
+}
+
+body{
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fdfaf5 !important;
+  padding: 10px;
+}
+html{
+  background: #dfdcd8 !important;
+}
+dialog {
+  position: fixed;
+  top: 50vh;
+  z-index: 5;
+}
+body:after{
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  display: block;
+  background: #0000001e;
+  position: fixed;
+  top:0px;
+  left:0px;
+}
+body:has(dialog[open]){
+  overflow: hidden;
+}
+textarea {
+  background-color: #fdfaf5;
+  appearance: none;
+  outline: none;
+  border:2px solid black;
+}
+select{
+  background-color: #fdfaf5;
+  outline: none;
+  border:2px solid black;
+}
+table {
+    border-collapse: collapse;
+}
+table td, table th {
+  border: 2px solid #000;
+
+}
+table thead {
+  background: #0000001e;
+  }
+table thead th {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+table tfoot {
+  font-weight: normal;
+}
+
+
